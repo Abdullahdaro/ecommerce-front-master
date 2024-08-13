@@ -57,10 +57,19 @@ const ButtonsWrapper = styled.div`
 `;
 
 export default function Featured({product}) {
+  console.log('Featured component is called with product:', product);
+
   const {addProduct} = useContext(CartContext);
+  
   function addFeaturedToCart() {
     addProduct(product._id);
   }
+
+  if (!product) {
+    return <div>Loading...</div>; // You can customize this message
+  }
+  // Rest of your component's code
+
   return (
     <Bg>
       <Center>
