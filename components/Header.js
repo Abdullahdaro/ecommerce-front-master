@@ -6,10 +6,9 @@ import {CartContext} from "@/components/CartContext";
 import BarsIcon from "@/components/icons/Bars";
 
 const StyledHeader = styled.header`
-  background-color: #222;
+  background-color: #C7C7C7;
 `;
 const Logo = styled(Link)`
-  color:#fff;
   text-decoration:none;
   position: relative;
   z-index: 3;
@@ -69,7 +68,12 @@ export default function Header() {
     <StyledHeader>
       <Center>
         <Wrapper>
-          <Logo href={'/'}>Ecommerce</Logo>
+          <Logo href={'/'}><svg width="147" height="43" viewBox="0 0 147 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="71.2" y="33.2" width="67.2" height="9.6" rx="4.8" fill="#FFF1DA"/>
+          <rect x="130.4" y="0.400024" width="16" height="9.6" rx="4.8" fill="#FFF1DA"/>
+          <rect y="33.2" width="16" height="9.6" rx="4.8" fill="#FFF1DA"/>
+          </svg>
+          </Logo>
           <StyledNav mobileNavActive={mobileNavActive}>
             <NavLink href={'/'}>Home</NavLink>
             <NavLink href={'/products'}>All products</NavLink>
