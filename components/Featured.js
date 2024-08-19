@@ -7,10 +7,26 @@ import {useContext} from "react";
 import {CartContext} from "@/components/CartContext";
 
 const Bg = styled.div`
-  background-color: #222;
-  color:#fff;
-  padding: 50px 0;
+  color: #fff;
+  width: 100%;
+  height: 100vh; /* Make sure the Bg takes up the full viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Ensure that the background image can be positioned */
+  overflow: hidden; /* To avoid any overflow issues with the image */
 `;
+
+const BgImage = styled.img`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the entire container */
+  z-index: -1; /* Send the image behind the content */
+`;
+
 const Title = styled.h1`
   margin:0;
   font-weight:normal;
@@ -72,27 +88,12 @@ export default function Featured({product}) {
 
   return (
     <Bg>
+      <BgImage src="background.jpg" alt="background" />
       <Center>
-        <ColumnsWrapper>
-          <Column>
-            <div>
-              <Title>{product.title}</Title>
-              <Desc>{product.description}</Desc>
-              <ButtonsWrapper>
-                <ButtonLink href={'/product/'+product._id} outline={1} white={1}>Read more</ButtonLink>
-                <Button white onClick={addFeaturedToCart}>
-                  <CartIcon />
-                  Add to cart
-                </Button>
-              </ButtonsWrapper>
-            </div>
-          </Column>
-          <Column>
-            <img src="https://dawid-next-ecommerce.s3.amazonaws.com/1679151719649.png" alt=""/>
-          </Column>
-        </ColumnsWrapper>
+        <div>
+          ds
+        </div>
       </Center>
-
     </Bg>
   );
 }

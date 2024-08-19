@@ -36,7 +36,7 @@ const StyledNav = styled.nav`
   align-items: center;
   width: 100%;
   padding: 10px;
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1000~px) {
     padding: 0;
     display: none;
   }
