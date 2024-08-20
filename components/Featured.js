@@ -91,7 +91,7 @@ export default function Featured({product}) {
       <BgImage src="background.jpg" alt="background" />
       <Center>
         <div>
-          ds
+          <Search/>
         </div>
       </Center>
     </Bg>
