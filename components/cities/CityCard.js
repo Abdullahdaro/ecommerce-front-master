@@ -1,84 +1,31 @@
-import styled from "styled-components";
-import Button from "@/components/Button";
-import CartIcon from "@/components/icons/CartIcon";
-import Link from "next/link";
-import {useContext} from "react";
-import {CartContext} from "@/components/CartContext";
+import { FaHeart, FaRegHeart } from 'react-icons/fa';
 
-const ProductWrapper = styled.div`
-  
-`;
+export default function CityCard() {
 
-const WhiteBox = styled(Link)`
-  background-color: #fff;
-  padding: 20px;
-  height: 120px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  img{
-    max-width: 100%;
-    max-height: 80px;
-  }
-`;
-
-const Title = styled(Link)`
-  font-weight: normal;
-  font-size:.9rem;
-  color:inherit;
-  text-decoration:none;
-  margin:0;
-`;
-
-const ProductInfoBox = styled.div`
-  margin-top: 5px;
-`;
-
-const PriceRow = styled.div`
-  display: block;
-  @media screen and (min-width: 768px) {
-    display: flex;
-    gap: 5px;
-  }
-  align-items: center;
-  justify-content:space-between;
-  margin-top:2px;
-`;
-
-const Price = styled.div`
-  font-size: 1rem;
-  font-weight:400;
-  text-align: right;
-  @media screen and (min-width: 768px) {
-    font-size: 1.2rem;
-    font-weight:600;
-    text-align: left;
-  }
-`;
-
-export default function ProductBox({_id,title,description,price,images}) {
-  const {addProduct} = useContext(CartContext);
-  const url = '/product/'+_id;
   return (
-    <ProductWrapper>
-      <WhiteBox href={url}>
-        <div>
-          <img src={images?.[0]} alt=""/>
+        <div className="relative w-[270px] h-[373px] flex-none order-0 flex-grow-0">
+            <div className=" absolute w-full h-full bg-gradient-to-r from-[rgba(54,54,56,0.85)] to-[rgba(54,54,56,0.3)] shadow-[8px_8px_34px_rgba(0,0,0,0.06)] rounded-[35px]"></div>
+            <div className="relative">
+                <div className="w-[269px] h-[273px] bg-cover bg-center rounded-t-[35px]">
+                    <img src="istanbulCity.jpg" className="rounded-t-[35px]" />
+                </div>
+                <div className="flex justify-between mt-3 mr-3 ml-3">
+                    <div className="w-[226px] h-[22px] font-volkhov font-bold text-[16px] leading-[22px] text-white">
+                        Istanbul, Turkey
+                    </div>
+                    <div className="w-[17.9px] h-[16px] rounded">
+                        <FaHeart className=" text-white inset-0 hover:hidden" />
+                        <FaRegHeart className=" text-red-600 inset-0 hidden hover:flex" />
+                    </div>
+                </div>
+                <div className="ml-3 mt-3 font-mulish text-[14px] leading-[18px] text-white">
+                    500 places to discover
+                </div>
+                <div className="absolute bottom-0 right-0 mr-3 mb-[-20px] font-mulish font-semibold text-[14px] text-[#FFDA32]">
+                    From 15$
+                </div>
+            </div>
         </div>
-      </WhiteBox>
-      <ProductInfoBox>
-        <Title href={url}>{title}</Title>
-        <PriceRow>
-          <Price>
-            ${price}
-          </Price>
-          <Button block onClick={() => addProduct(_id)} primary outline>
-            Add to cart
-          </Button>
-        </PriceRow>
-      </ProductInfoBox>
-    </ProductWrapper>
+
   );
 }

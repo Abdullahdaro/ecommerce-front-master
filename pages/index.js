@@ -3,12 +3,16 @@ import Featured from "@/components/Featured";
 import {Product} from "@/models/Product";
 import {mongooseConnect} from "@/lib/mongoose";
 import NewProducts from "@/components/NewProducts";
+import { ChooseTransfer } from "@/components/homeComponents/ChooseTransfer";
+import TopTours from "@/components/Tours/TopTours";
 
 export default function HomePage({featuredProduct,newProducts}) {
   return (
     <div>
       <Header />
       <Featured product={featuredProduct} />
+      <ChooseTransfer />
+      <TopTours />
       <NewProducts products={newProducts} />
     </div>
   );

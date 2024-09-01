@@ -11,7 +11,7 @@ export default function SearchBar() {
   };
 
   return (
-    <div className=" flex items-center justify-center p-4 bg-gray-100 rounded-[35px] h-[90px] w-[1000px]">
+    <div className=" flex items-center justify-center p-5 w-[1000px] h-[110px] bg-gradient-to-r from-[rgba(255,255,255,0.255)] to-[rgba(255,255,255,0.135)] shadow-[0px_10px_30px_rgba(123,188,176,0.5)] rounded-[35px]">
       {/* City Name Input */}
       <div className="flex-1 px-2">
         <div className='flex text-secondary justify-start'>

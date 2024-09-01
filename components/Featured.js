@@ -6,6 +6,8 @@ import CartIcon from "@/components/icons/CartIcon";
 import {useContext} from "react";
 import {CartContext} from "@/components/CartContext";
 import SearchBar from "./SearchBar";
+import CityCard from "./cities/CityCard";
+import NewCities from "./cities/NewCities";
 
 const Bg = styled.div`
   color: #fff;
@@ -15,17 +17,19 @@ const Bg = styled.div`
   align-items: center;
   justify-content: center;
   position: relative; /* Ensure that the background image can be positioned */
-  overflow: hidden; /* To avoid any overflow issues with the image */
 `;
 
 const BgImage = styled.img`
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
+  transform: scaleX(1);
+  margin-top: -20px;
+  scale: 1.1;
   object-fit: cover; /* Ensure the image covers the entire container */
   z-index: -1; /* Send the image behind the content */
+  background: linear-gradient(180deg, rgba(255, 218, 50, 0.03) 89%, rgba(255, 218, 50, 0.6) 106.55%), url(solal.29_photography_edward_hopper_style_text__palace_on_the_ho_240cf5fc-c81a-445e-821f-f9ba3c4df0f7.png);
+  filter: blur(50px);
 `;
 
 const Title = styled.h1`
@@ -89,12 +93,11 @@ export default function Featured({product}) {
 
   return (
     <Bg>
-      <BgImage src="background.jpg" alt="background" />
+      <BgImage src="background.jpg" alt="background" className=""/>
       <Center>
-        <div>
-          <SearchBar/>
           <div>
             <div className="justify-center align-center items-center flex flex-col">
+            <SearchBar/>
               <h2 className="text-[48px] text-secondary font-volkhov">We Find The Best Tours For You </h2>
               <p className="items-center justify-center text-center">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. <br/> Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
             </div>
@@ -129,7 +132,7 @@ export default function Featured({product}) {
               </div>
             </div>
           </div>
-        </div>
+          <NewCities/>
       </Center>
     </Bg>
   );
