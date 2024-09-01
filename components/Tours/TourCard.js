@@ -2,7 +2,7 @@ import React from "react";
 
 function TourCard({ title, image, aspectRatio, paddingTop }) {
   return (
-    <div className="flex flex-col self-stretch my-auto rounded-none h-full min-w-[240px] w-[419px]">
+    <div className="flex flex-col self-stretch my-auto rounded-none h-full min-w-[240px] w-[419px] hover:cursor-pointer">
       <div className={`flex relative justify-center flex-col ${paddingTop} w-full aspect-[${aspectRatio}] rounded-[30px] shadow-[-4px_4px_6px_rgba(199,170,39,0.3)] max-md:pt-24`}>
         <img loading="lazy" src={image} alt={title} className="object-cover absolute inset-0 size-full rounded-[30px]" />
         <div 
