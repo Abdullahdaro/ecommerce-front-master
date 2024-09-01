@@ -99,19 +99,33 @@ export default function Featured({product}) {
               <p className="items-center justify-center text-center">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. <br/> Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
             </div>
             <div className="flex justify-between gap-x-[10px]">
-              <div className="flex justify-between items-center w-[25%] rounded-[30px] bg-[#FFFBA3] text-black shadow-md p-2 px-[30px] gap-[20px] h-[75px]"> 
+              <div className="flex justify-between items-center w-[25%] rounded-[25px] bg-[#FFFBA3] text-black shadow-md p-2 px-[30px] gap-[20px] h-[80px]"> 
                 <div className="">
                   <h3 className="font-poppins font-medium text-[23.9422px] leading-[124.5%] tracking-[-0.015em] text-[#080809]">Tours</h3>
                   <p className="font-poppins font-light text-[14px] leading-[124.5%] tracking-[-0.015em] text-[#080809] order-1 self-stretch flex-none flex-grow-0">120 tours</p>
                 </div>
-                <img src="tour.jpg" alt="tour" />
+                <img src="toursImage.png" alt="tour" className="rounded-[35px] h-[60px]" />
               </div>
-              <div className="flex justify-between items-center w-[25%] rounded-[30px] bg-[#FFFBA3] text-black shadow-md p-2 px-[30px] gap-[20px] h-[75px]"> 
+              <div className="flex justify-between items-center w-[25%] rounded-[25px] bg-[#98D786] text-black shadow-md p-2 px-[30px] gap-[20px] h-[80px]"> 
                 <div className="">
                   <h3 className="font-poppins font-medium text-[23.9422px] leading-[124.5%] tracking-[-0.015em] text-[#080809]">Tours</h3>
                   <p className="font-poppins font-light text-[14px] leading-[124.5%] tracking-[-0.015em] text-[#080809] order-1 self-stretch flex-none flex-grow-0">120 tours</p>
                 </div>
-                <img src="tour.jpg" alt="tour" />
+                <img src="toursImage.png" alt="tour" className="rounded-[35px] h-[60px]" />
+              </div>
+              <div className="flex justify-between items-center w-[25%] rounded-[25px] bg-[#BBBAF6] text-black shadow-md p-2 px-[30px] gap-[20px] h-[80px]"> 
+                <div className="">
+                  <h3 className="font-poppins font-medium text-[23.9422px] leading-[124.5%] tracking-[-0.015em] text-[#080809]">Tours</h3>
+                  <p className="font-poppins font-light text-[14px] leading-[124.5%] tracking-[-0.015em] text-[#080809] order-1 self-stretch flex-none flex-grow-0">120 tours</p>
+                </div>
+                <img src="toursImage.png" alt="tour" className="rounded-[35px] h-[60px]" />
+              </div>
+              <div className="flex justify-between items-center w-[25%] rounded-[25px] bg-[#FF9B9E] text-black shadow-md p-2 px-[30px] gap-[20px] h-[80px]"> 
+                <div className="">
+                  <h3 className="font-poppins font-medium text-[23.9422px] leading-[124.5%] tracking-[-0.015em] text-[#080809]">Tours</h3>
+                  <p className="font-poppins font-light text-[14px] leading-[124.5%] tracking-[-0.015em] text-[#080809] order-1 self-stretch flex-none flex-grow-0">120 tours</p>
+                </div>
+                <img src="toursImage.png" alt="tour" className="rounded-[35px] h-[60px]" />
               </div>
             </div>
           </div>
