@@ -5,6 +5,7 @@ import {mongooseConnect} from "@/lib/mongoose";
 import NewProducts from "@/components/NewProducts";
 import { ChooseTransfer } from "@/components/homeComponents/ChooseTransfer";
 import TopTours from "@/components/Tours/TopTours";
+import RecommendationsGrid from "@/components/Recommendations/RecommendationsGrid";
 
 export default function HomePage({featuredProduct,newProducts}) {
   return (
@@ -13,6 +14,7 @@ export default function HomePage({featuredProduct,newProducts}) {
       <Featured product={featuredProduct} />
       <ChooseTransfer />
       <TopTours />
+      <RecommendationsGrid />
       <NewProducts products={newProducts} />
     </div>
   );
