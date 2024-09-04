@@ -17,7 +17,6 @@ export default function HomePage({featuredProduct,newProducts}) {
       <TopTours />
       <RecommendationsGrid />
       <Footer />
-      <NewProducts products={newProducts} />
     </div>
   );
 }
