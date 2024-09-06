@@ -14,7 +14,9 @@ function RecommendationsGrid() {
   return (
     <Center>
         <div className="flex flex-col pt-9 pb-16 text-2xl font-medium tracking-tight leading-none rounded-[35px] text-zinc-950">
-            <h2 > Recommendation </h2>
+            <h1 className="text-7xl font-bold text-center text-black max-md:text-4xl my-[40px]">
+              Recommendations
+            </h1>
             <div className="flex flex-wrap gap-10 justify-center items-center w-full max-md:max-w-full">
                 {categories.slice(0, 3).map((category, index) => (
                 <RecommendationCard key={index} title={category.title} imageSrc={category.imageSrc} />

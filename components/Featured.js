@@ -12,7 +12,7 @@ import NewCities from "./cities/NewCities";
 const Bg = styled.div`
   color: #fff;
   width: 100%;
-  height: 100vh; /* Make sure the Bg takes up the full viewport height */
+  height: 850 px; /* Make sure the Bg takes up the full viewport height */
   display: flex;
   align-items: center;
   justify-content: center;

@@ -7,6 +7,7 @@ import NewProducts from "@/components/NewProducts";
 import { ChooseTransfer } from "@/components/homeComponents/ChooseTransfer";
 import TopTours from "@/components/Tours/TopTours";
 import RecommendationsGrid from "@/components/Recommendations/RecommendationsGrid";
+import SendMessages from "@/components/SendMessages";
 
 export default function HomePage({featuredProduct,newProducts}) {
   return (
@@ -16,6 +17,7 @@ export default function HomePage({featuredProduct,newProducts}) {
       <ChooseTransfer />
       <TopTours />
       <RecommendationsGrid />
+      <SendMessages />
       <Footer />
     </div>
   );
