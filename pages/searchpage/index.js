@@ -3,14 +3,18 @@ import Footer from "@/components/Footer";
 import {Product} from "@/models/Product";
 import {mongooseConnect} from "@/lib/mongoose";
 import SearchBar from "@/components/SearchBar";
+import TripSafety from "@/components/icons/TripSafety";
+import Center from "@/components/Center";
 
 
 export default function SearchPage({featuredProduct,newProducts}) {
   return (
     <div>
       <Header />
-      <SearchBar />
-      
+      <Center>
+        <SearchBar />
+        <TripSafety />
+      </ Center >
       <Footer />
     </div>
   );

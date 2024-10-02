@@ -35,3 +35,11 @@ export async function getServerSideProps() {
     },
   };
 }
+
+HomePage.getLayout = function getLayout(page) {
+  return (
+    <div>
+      {page}
+    </div>
+  )
+}
