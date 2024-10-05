@@ -5,6 +5,7 @@ import {mongooseConnect} from "@/lib/mongoose";
 import SearchBar from "@/components/SearchBar";
 import TripSafety from "@/components/icons/TripSafety";
 import Center from "@/components/Center";
+import FilterForm from "@/components/Searchcomponents/FilterForm";
 
 
 export default function SearchPage({featuredProduct,newProducts}) {
@@ -13,6 +14,11 @@ export default function SearchPage({featuredProduct,newProducts}) {
       <Header />
       <Center>
         <SearchBar />
+        <div>
+          <div>
+            <FilterForm />
+          </div>
+        </div>
         <TripSafety />
       </ Center >
       <Footer />
