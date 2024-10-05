@@ -6,6 +6,7 @@ import SearchBar from "@/components/SearchBar";
 import TripSafety from "@/components/icons/TripSafety";
 import Center from "@/components/Center";
 import FilterForm from "@/components/Searchcomponents/FilterForm";
+import TransportsCards from "@/components/TransportationsCards/TransportsCards";
 
 
 export default function SearchPage({featuredProduct,newProducts}) {
@@ -20,6 +21,7 @@ export default function SearchPage({featuredProduct,newProducts}) {
           </div>
         </div>
         <TripSafety />
+        <TransportsCards />
       </ Center >
       <Footer />
     </div>
